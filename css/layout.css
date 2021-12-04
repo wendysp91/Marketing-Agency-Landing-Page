@@ -1,0 +1,15 @@
+.container{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+header{
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, rgba(9, 32, 63, 0.5) 0%, rgba(83, 120, 149, 0.5) 100%), url(../assets/img/banner\ dark.jpeg);
+}
