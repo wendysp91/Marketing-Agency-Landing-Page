@@ -28,15 +28,17 @@
   }
 
   /* base */
-  body{
+body{
     font-family: 'Roboto', sans-serif;
+    color: #485563;
 }
 :root{
     scroll-behavior: smooth;
 }
 
+
   /* layout */
-  .container{
+.container{
     width: 90%;
     max-width: 1200px;
     overflow: hidden;
@@ -44,13 +46,12 @@
     padding: 60px 0;
 }
 header{
-    height: 90vh;
+    height: 80vh;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(to top, rgba(9, 32, 63, 0.753) 0%, rgba(83, 120, 149, 0.753) 100%), url(../assets/img/banner\ dark.jpeg);
-    
     
 }
 .main-paragraph{
@@ -112,4 +113,44 @@ nav a{
     color: #485563;
     margin-bottom: 40px;
     font-size: 40px;
+}
+.subtitle__p{
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.feature__icono-fondo{
+    display: inline-block;
+    background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+.features__cards{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 100px;
+}
+#Features .card{
+    width: 30%;
+}
+#Features h3{ 
+    margin-top: 30px;
+}
+#Features h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+#Features p{
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: center;
 }
