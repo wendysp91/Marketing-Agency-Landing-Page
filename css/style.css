@@ -30,10 +30,16 @@
   /* base */
 body{
     font-family: 'Roboto', sans-serif;
-    color: #485563;
+    
 }
 :root{
     scroll-behavior: smooth;
+}
+h2,h3{
+    color: black;
+}
+p{
+    color: #485563;
 }
 
 
@@ -44,6 +50,14 @@ body{
     overflow: hidden;
     margin: auto;
     padding: 60px 0;
+}
+.logo{
+    color: #fff;
+    font-weight: 800;
+    margin-left: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+    text-decoration: none;
 }
 header{
     height: 80vh;
@@ -106,12 +120,12 @@ nav a{
 .p-header{
     font-size: 20px;
     margin-bottom: 25px;
+    color: #fff;
 }
 .subtitle{
     text-align: center;
     font-weight: 400;
-    color: #485563;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 40px;
 }
 .subtitle__p{
@@ -153,4 +167,61 @@ nav a{
     font-size: 18px;
     margin-bottom: 25px;
     text-align: center;
+}
+#Services{
+    background: #F3F3F3;
+}
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+    
+}
+.services img{
+    width: 40%; 
+    height: auto;
+    max-width: 100%;
+}
+.services .checklist{
+    width: 45%;
+}
+.services h2{
+    text-align: start;
+}
+.services i{
+    margin-right: 10px;
+}
+
+div#slider  { 
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 300%;
+    height: 25vh;
+    animation: 30s slide alternate infinite; 
+}
+div#slider .img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 20%;
+}
+div#slider img { 
+    object-fit: cover;
+    object-position: center;
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+}
+
+@keyframes slide {
+0% { left: 0%; }
+30% { left: 0%; }
+
+35% { left: -100%; }
+65% { left: -100%; }
+
+70% { left: -200%; }
+100% { left: -200%; }
 }
