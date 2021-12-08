@@ -240,6 +240,20 @@ div#slider img {
 #banner2 .text p{
     margin-top: 1em;
 }
+/************ Numbers ***************/
+.numbers{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+}
+.counter{
+    
+}
+.counter i, .counter .counter__quantity{
+    font-size: 40px;
+} 
 /************ Footer ***************/
 footer{
     background: #F3F3F3;
@@ -253,7 +267,3 @@ footer .logo{
     color: black;
     margin-top: 0;
 }
-
-
-
-
