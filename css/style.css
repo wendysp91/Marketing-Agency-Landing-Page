@@ -248,16 +248,25 @@ div#slider img {
     text-align: center;
     height: 40vh;
 }
-.counter{
-    
+.numbers h3{
+    color: #485563;
 }
 .counter i, .counter .counter__quantity{
     font-size: 40px;
-} 
-/************ Footer ***************/
-footer{
-    background: #F3F3F3;
 }
+/************ Contact ***************/
+#Contact{
+    background-color: #F3F3F3;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}    
+/************ Footer ***************/
+
 .footer{
     display: flex;
     flex-direction: column;
