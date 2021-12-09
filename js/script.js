@@ -1,6 +1,7 @@
 addEventListener("DOMContentLoaded", () =>{
     const counters = document.querySelectorAll(".counter__quantity");
     const skip = 1000;
+    
 
     const countersAnimate = () => {
         for (const counter of counters) {
@@ -19,5 +20,16 @@ addEventListener("DOMContentLoaded", () =>{
         update_count();
         }
     }
-    countersAnimate();
+    
+    function isVisible(){
+        var elem = document.getElementById('Contact');
+        var posTopView = window.scrollY;
+        var posButView = posTopView + window.innerHeight;
+        var elemTop = elem.offsetTop;
+        /*var elemBottom = elemTop + elem.offsetHeight;*/
+        if (elemTop > posTopView && elemTop < posButView) {
+            countersAnimate();
+        }  
+    }
+    window.addEventListener('scroll',isVisible);
 })
