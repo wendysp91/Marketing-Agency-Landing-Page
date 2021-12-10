@@ -2,7 +2,6 @@ addEventListener("DOMContentLoaded", () =>{
     const counters = document.querySelectorAll(".counter__quantity");
     const skip = 1000;
     
-
     const countersAnimate = () => {
         for (const counter of counters) {
             const update_count = () => {
@@ -12,7 +11,7 @@ addEventListener("DOMContentLoaded", () =>{
 
                 if (current_value < quantity_max) {
                     counter.innerText = Math.ceil(current_value + increase);
-                    setTimeout(update_count, 5);
+                    setTimeout(update_count, 3);
                 } else {
                     counter.innerText = quantity_max;
                 } 
