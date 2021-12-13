@@ -31,4 +31,16 @@ addEventListener("DOMContentLoaded", () =>{
         }  
     }
     window.addEventListener('scroll',isVisible);
+    const hamburguer = document.getElementById('hamburguer');
+    const nav = document.getElementById('nav');
+    hamburguer.addEventListener('click', (e) => {
+        nav.classList.toggle("menu-opened");
+
+        /*nav.className += " menu-opened";*/
+    })
+    window.addEventListener('click', (e)=>{
+        if (nav.classList.contains('menu-opened') && e.target != nav && e.target != hamburguer) {
+            nav.classList.toggle("menu-opened");
+        }
+    })
 })

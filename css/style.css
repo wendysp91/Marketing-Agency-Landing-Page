@@ -78,7 +78,7 @@ p{
     top: 0;
     right: 0;
     width: 30vw;
-    height: 10vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -86,6 +86,8 @@ p{
     transform: translate(110%);
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    animation: ease-in 10s; 
+
 }
 .menu-opened{
     transform: translate(0);
