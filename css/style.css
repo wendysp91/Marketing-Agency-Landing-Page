@@ -86,9 +86,9 @@ p{
     transform: translate(110%);
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-    animation: ease-in 10s; 
-
+    
 }
+
 .menu-opened{
     transform: translate(0);
 }
@@ -108,21 +108,29 @@ header{
 .main-paragraph{
     height: 50vh;
     margin: 10vh 40px;
-    width: 50%;
+    width: 80%;
     padding: 0;
-    float: left;
+    
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     color: #fff;
 }
+@media (min-width: 1200px) {
+    .main-paragraph{
+    float: left;
+    width: 50%;
+    }
+}
+
+
 .title{
-    font-size: 60px;
+    font-size: 4em;
     margin-bottom: 15px;
 }
 .p-header{
-    font-size: 20px;
+    font-size: 1.7em;
     margin-bottom: 25px;
     color: #fff;
 }
@@ -130,10 +138,10 @@ header{
     text-align: center;
     font-weight: 400;
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 2rem;
 }
 .subtitle__p{
-    font-size: 18px;
+    font-size: 1rem;
     text-align: center;
     width: 80%;
     margin: auto;
@@ -154,12 +162,13 @@ header{
 }
 .features__cards{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     text-align: center;
     margin-top: 100px;
 }
 #Features .card{
-    width: 30%;
+    width: 100%;
 }
 #Features h3{ 
     margin-top: 30px;
@@ -173,23 +182,31 @@ header{
     margin-bottom: 25px;
     text-align: center;
 }
+@media (min-width: 1200px) {
+    .features__cards{
+        flex-direction: row;
+    }
+    #Features .card{
+        width: 30%;
+    }
+}
 /************ Services ***************/
 #Services{
     background: #F3F3F3;
 }
 .services{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     text-align: start;
-    
 }
 .services img{
-    width: 40%; 
+    width: 100%; 
     height: auto;
     max-width: 100%;
 }
 .services .checklist{
-    width: 45%;
+    width: 100%;
 }
 .services h2{
     text-align: start;
@@ -197,23 +214,36 @@ header{
 .services i{
     margin-right: 10px;
 }
+@media (min-width: 1200px) {
+    .services{
+        flex-direction: row;
+    }
+    .services img{
+        float: left;
+        width: 40%;
+    }
+    .services .checklist{
+        width: 45%;
+    }
+}
 /************ Reviews ***************/
-div#slider  { 
+#slider { 
     display: flex;
     position: relative;
     overflow: hidden;
     width: 300%;
-    height: 25vh;
+    height: 60vh;
     animation: 30s slide alternate infinite; 
 }
-div#slider .img{
+#slider .img{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
     width: 20%;
 }
-div#slider img { 
+#slider img { 
     object-fit: cover;
     object-position: center;
     width: 100px; 
@@ -231,33 +261,53 @@ div#slider img {
 70% { left: -200%; }
 100% { left: -200%; }
 }
+@media (min-width: 1200px) {
+    #slider{
+        height: 30vh;
+    }
+}
 /************ Banner2 ***************/
 #banner2{
     background-image: linear-gradient(to right, rgba(218, 224, 233, 0.651) 0%, rgba(39, 72, 99, 0.384) 100%), url(../assets/img/banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 80vh;
 }
 #banner2 .text{
-    float: left;
-    width: 50%;
+    width: 100%;
 }
 #banner2 .text p{
     margin-top: 1em;
 }
+@media (min-width: 1200px) {
+    #banner2{
+        height: 60vh;
+    }
+    #banner2 .text{
+        float: left;
+        width: 50%;
+    }
+}
 /************ Numbers ***************/
 .numbers{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    height: 40vh;
+    height: 100vh;
 }
 .numbers h3{
     color: #485563;
 }
 .counter i, .counter .counter__quantity{
     font-size: 40px;
+}
+@media (min-width: 1200px) {
+    .numbers{
+        flex-direction: row;
+        height: 40vh;
+    }
 }
 /************ Contact ***************/
 #Contact{
@@ -269,6 +319,7 @@ div#slider img {
     justify-content: space-evenly;
     align-items: center;
     height: 40vh;
+    text-align: center;
 }    
 .contact__submit{
     font-size: 0.9em;
@@ -293,12 +344,23 @@ div#slider img {
     box-sizing: content-box;
     transition: all .3s;
 }
+#Contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 1200px) {
+    #Contact form{
+        flex-direction: row;
+    }
+}
 /************ Footer ***************/
 
 .footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 footer .logo{
     color: black;
