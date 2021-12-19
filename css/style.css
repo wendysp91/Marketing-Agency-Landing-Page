@@ -40,7 +40,16 @@ h2,h3{
 p{
     color: #485563;
 }
-
+.subtitle{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.subtitle__p{
+    font-size: 1rem;
+    text-align: center;
+}
 /************ Layout ***************/
 .container{
     width: 90%;
@@ -109,9 +118,7 @@ header{
     background-image: linear-gradient(to right, rgba(2, 15, 32, 0.842) 0%, rgba(83, 120, 149, 0.753) 100%), url(../assets/img/banner\ dark.jpeg);
 }
 .main-paragraph{
-    height: 50vh;
-    margin: 10vh 40px;
-    width: 80%;
+    height: 60vh;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -125,29 +132,19 @@ header{
 .p-header{
     margin-bottom: 25px;
     color: #fff;
+    
 }
-.subtitle{
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 10px;
-    font-size: 2rem;
-}
-.subtitle__p{
-    font-size: 1rem;
-    text-align: center;
-    width: 80%;
-    margin: auto;
-}
+
 @media (min-width: 1200px) {
     .main-paragraph{
     float: left;
-    width: 50%;
+
     }
     .title{
         font-size: 4em;
     }
     .p-header{
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
 }
 /************ Features ***************/
@@ -168,23 +165,23 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
-    margin-top: 100px;
+    text-align: start;
 }
 #Features .card{
     width: 100%;
+    text-align: center;
 }
 #Features h3{ 
     margin-top: 30px;
 }
 #Features h2{
-    font-size: 40px;
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 #Features p{
     font-size: 18px;
     margin-bottom: 25px;
-    text-align: center;
+    text-align: start;
 }
 @media (min-width: 1200px) {
     .features__cards{
@@ -267,6 +264,7 @@ header{
     width: 100px; 
     height: 100px;
     border-radius: 50%;
+    margin-bottom: 2em;
 }
 
 @keyframes slide {
@@ -281,7 +279,7 @@ header{
 }
 @media (min-width: 1200px) {
     #slider{
-        height: 30vh;
+        height: 40vh;
     }
 }
 /************ Banner2 ***************/
@@ -293,9 +291,11 @@ header{
 }
 #banner2 .text{
     width: 100%;
+    
 }
 #banner2 .text p{
     margin-top: 1em;
+    text-align: start;
 }
 @media (min-width: 1200px) {
     #banner2{
@@ -303,7 +303,8 @@ header{
     }
     #banner2 .text{
         float: left;
-        width: 50%;
+        width: 45%;
+        margin: 0 5%;
     }
 }
 /************ Numbers ***************/
@@ -340,7 +341,7 @@ header{
     text-align: center;
 }    
 .contact__submit{
-    font-size: 0.9em;
+    font-size: 1em;
     height: 40px;
     border: 2px solid;
     border-radius: 0 5px 5px 0;
@@ -350,6 +351,7 @@ header{
     background-color: #4c1ecc;
     color: #fff;
     outline: none;
+    width: 20em;
 }
 #email{
     background-color: #F9F9F9;
@@ -357,10 +359,10 @@ header{
     border-radius: 5px 0 0 5px;
     outline: none;
     height: 40px;
-    padding: 0 60px 0 10px;
     box-shadow: none;
     box-sizing: content-box;
     transition: all .3s;
+    width: 20em;
 }
 #Contact form{
     display: flex;
@@ -370,6 +372,12 @@ header{
 @media (min-width: 1200px) {
     #Contact form{
         flex-direction: row;
+    }
+    .contact__submit{
+        width: 10em;
+    }
+    #email{
+        width: 20em;
     }
 }
 /************ Footer ***************/
