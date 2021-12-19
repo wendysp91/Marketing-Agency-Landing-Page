@@ -209,8 +209,8 @@ header{
     justify-content: space-evenly;
 }
 .services img{
-    width: 100%; 
     height: auto;
+
     max-width: 100%;
 }
 .services .checklist{
@@ -222,7 +222,7 @@ header{
 .services i{
     margin-right: 10px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
     #Services{
         height: 100vh;
     }
@@ -232,10 +232,12 @@ header{
     .hero{
         flex-direction: row;
         justify-content: space-evenly;
+        height: 45vh;
     }
     .services img{
         float: left;
         width: 40%;
+        flex-basis: 200px;
     }
     .services .checklist{
         width: 45%;
