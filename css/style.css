@@ -134,6 +134,15 @@ header{
     color: #fff;
     
 }
+header a{
+    text-decoration: none;
+    text-align: center;
+}
+header .contact__submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (min-width: 1200px) {
     .main-paragraph{
@@ -354,6 +363,7 @@ header{
     color: #fff;
     outline: none;
     width: 20em;
+    cursor: pointer;
 }
 #email{
     background-color: #F9F9F9;
