@@ -203,23 +203,26 @@ header .contact__submit{
 /************ Services ***************/
 #Services{
     background-color: #ebebeb;
-    height: 200vh;
+    height: 80vh;
 }
 .services{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: start;
-    height: 200vh;
+    height: 80vh;
 }
-.hero{
+.service__card{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+.image{
+    width: 100%;
+}
 .services img{
     height: auto;
-
+    width: 100%;
     max-width: 100%;
 }
 .services .checklist{
@@ -233,19 +236,20 @@ header .contact__submit{
 }
 @media (min-width: 900px) {
     #Services{
-        height: 100vh;
+        height: 80vh;
     }
     .services{
-        height: 100vh;
+        height: 80vh;
     }
-    .hero{
+    .service__card{
         flex-direction: row;
         justify-content: space-evenly;
-        height: 45vh;
+    }
+    .image{
+        width: 30%;
     }
     .services img{
         float: left;
-        width: 40%;
         flex-basis: 200px;
     }
     .services .checklist{
